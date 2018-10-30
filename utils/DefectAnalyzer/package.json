@@ -1,0 +1,19 @@
+{
+  "name": "investigate-delta-failures",
+  "version": "1.0.0",
+  "description": "Script to investigate new FT failures",
+  "main": "generate.js",
+  "dependencies": {
+    "command-line-args": "^4.0.7",
+    "csvdata": "^1.4.0",
+    "glob": "^7.1.2",
+    "jsonfile": "^4.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Meet Parikh",
+  "license": "ISC"
+}

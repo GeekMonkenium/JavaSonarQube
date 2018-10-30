@@ -1,0 +1,19 @@
+#parse("/array.java.vm")
+#if ($packageName)
+package $packageName;
+
+#end##
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+strict = $strict,
+features = {"$featureFile"},
+##plugin = #stringArray($plugins),
+monochrome = $monochrome,
+glue = #stringArray($glue))
+public class $className {
+}
